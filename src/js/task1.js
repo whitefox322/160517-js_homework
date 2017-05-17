@@ -1,24 +1,15 @@
 /*Написати функцію, яка буде виводити переданий їй масив через 1 елемент.*/
 
-/*Вивід як елемент*/
+var arr = [3, 4, 5, 6, 7, 8, 9];
+var answer = nextOne(arr);
 
-var arr = [0, 1, 2, 3, 4, 5];
+function nextOne(array) {
+    var result = [];
+    for (var counter = 0; counter < array.length; counter+=2) {
+        result.push(array[counter]);
+    }
 
-function array () {
-    var arg = arguments;
-    return arg[0];
+    return result;
 }
 
-console.log(array(arr));
-
-
-/*Вивід як масив*/
-//
-// var arr = [0, 1, 2, 3, 4, 5];
-//
-// function array (arr) {
-//     return arr;
-// }
-//
-// console.log(array(arr));
-
+console.log(answer);

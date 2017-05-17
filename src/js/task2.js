@@ -9,11 +9,10 @@ var step = 3;
 var newArr = newArray(arr,step);
 
 function newArray(array, move) {
-    var mass = [];
-    var result = mass;
+    var result = [];
 
-    for (var counter1 = 0, counter2 = 0; counter2 < array.length; counter1++, counter2 += move) {
-        mass[counter1] = array[counter2];
+    for (var counter = 0; counter < array.length; counter += move) {
+        result.push(array[counter]);
     }
 
     return result;
